@@ -1,32 +1,41 @@
 import { $ } from "./assets/selectors.js";
 
-const $form = $('.form');
+const $form = $(".form");
+const $status = $(".status")
 
-$form.addEventListener('submit', async e => {
+$form.addEventListener("submit", handleSubmit);
+
+async function handleSubmit(e) {
     e.preventDefault();
+    $status.classList.remove("status--open")
 
     const data = new FormData($form);
     let allCorrect = false;
 
     const options = {
-        method: 'POST',
+        method: "POST",
         body: data,
         headers: {
-            'Accept': 'application/json'
+            "Accept": "application/json"
         }
     }
 
-    const isValidForm = validForm(data.get('email'), data.get('message'));
+    const isValidForm = validForm(data.get("email"), data.get("message"));
 
     if(isValidForm) {
-        const formRequest = await fetch('https://formspree.io/f/meqdjobj', options);
+        const formRequest = await fetch("https://formspree.io/f/meqdjobj", options);
         allCorrect = formRequest.ok;
     }    
 
     $form.reset();
 
-    if(allCorrect) return console.log(true)
-    return console.log(false)
-});
+    if(allCorrect) return openModal("Gracias por enviarme un mensaje. ¡Pronto te responderé!")
+    return openModal("Email incorrecto. Vuelve a intentarlo.")
+}
+
+function openModal(text) {
+    $status.textContent = text;
+    $status.classList.add("status--open");
+}
 
 const validForm = (mail, message) => /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(mail) && /[A-Z]/gi.test(message);

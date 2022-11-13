@@ -8,7 +8,7 @@
     --images-max-width: 500px;
     --text-max-width: 500px;
 
-    --main-font: "Inter", -apple-system, system-ui, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+    --main-font: "Inter", -apple-system, system-ui, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue";
     --main-size: 1rem;
 
     --title-size: 4rem;
@@ -55,7 +55,6 @@ html {
 body {
     font-family: var(--main-font);
     font-size: var(--main-size);
-    font-display: swap;
     background-color: var(--background-primary-dark);
     color: var(--color-primary-white);
     text-rendering: optimizeLegibility;
@@ -147,14 +146,13 @@ body::-webkit-scrollbar-thumb:hover {
     padding: var(--space-separator-x-small);
     border-radius: var(--border-radius);
     background-color: var(--background-secondary-gray);
-    margin-top: var(--space-separator-x-small);
     white-space: nowrap;
     text-align: center;
 }
 
 .blur {
     background-image: var(--gradient-colorful);
-    padding: 8rem;
+    padding: 7rem;
     position: absolute;
     filter: blur(6rem);
     z-index: -1;
@@ -331,6 +329,7 @@ body::-webkit-scrollbar-thumb:hover {
 .timelines__card {
     border-left: 0.14rem solid var(--color-gradient-purple);
     padding: var(--space-separator-long);
+    padding-right: 0;
     position: relative;
 }
 
@@ -345,7 +344,7 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: 100%;
     position: absolute;
     left: -0.7rem;
-    content: '';
+    content: "";
 }
 
 .timelines__info {
@@ -392,6 +391,27 @@ body::-webkit-scrollbar-thumb:hover {
     width: 100%;
 }
 
+.status {
+    background: var(--gradient-colorful);
+    padding: var(--space-separator-x-small);
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    top: 5.2rem;
+    width: 100%;
+    opacity: 0;
+}
+
+.status--open {
+    animation: status 5s 1;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+    }
+}
+
 /*--------------------------------Footer--------------------------------*/
 
 .footer {
@@ -399,6 +419,10 @@ body::-webkit-scrollbar-thumb:hover {
     padding: var(--space-separator-small) 0;
     background-color: var(--background-secondary-gray);
     font-size: var(--small-size);
+}
+
+.footer__inner {
+    justify-content: center;
 }
 
 /*--------------------------------Responsive--------------------------------*/
@@ -411,7 +435,7 @@ body::-webkit-scrollbar-thumb:hover {
         --text-max-width: 460px;
     }
 
-    .aboutme__text, .home__text, .form, .home__picture, .aboutme__picture {
+    .aboutme__text, .home__text, .form, .home__picture, .aboutme__picture--img {
         margin-top: var(--space-separator-long);
     }
 }
@@ -445,10 +469,6 @@ body::-webkit-scrollbar-thumb:hover {
         --images-max-width: 100%; 
         --title-size: 2.3rem;
         --subtitle-size: 1.2rem;
-    }
-
-    .header {
-        background-color: #000;
     }
 
     .header__links--page {
@@ -489,6 +509,10 @@ body::-webkit-scrollbar-thumb:hover {
         border-bottom: var(--border-separator);
     }
 
+    .header__link--contact {
+        border-color: var(--color-primary-white) ;
+    }
+
     .header__responsive, .header__logo {
         display: block;
         position: relative;
@@ -504,7 +528,36 @@ body::-webkit-scrollbar-thumb:hover {
         gap: var(--space-separator-small);
     }
 
-    .footer__inner {
-        justify-content: center;
+    .about__previous__card {
+        width: 100%;
+        border-top: var(--border-separator);
+        padding: var(--space-separator-long) 0;
     }
+}
+
+/*--------------------------------Medias--------------------------------*/
+
+@media (prefers-reduced-motion) { 
+    html {
+        scroll-behavior: auto;
+    }
+    
+    .link, .form__data {
+        transition: none;
+    }
+    
+    .home__lines {
+        display: none;
+    }
+}
+
+/*--------------------------------Change theme--------------------------------*/
+
+html[scheme="light__mode"] {
+    --background-primary-dark: #fff;
+    --background-secondary-gray: #eee;
+    --background-tertiary-gray: #0001;
+
+    --color-primary-white: #000;
+    --color-secondary-gray: #444; 
 }
