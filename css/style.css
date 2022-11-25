@@ -397,7 +397,7 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center;
     position: fixed;
     z-index: 1;
-    top: 5.2rem;
+    top: 5.4rem;
     width: 100%;
     opacity: 0;
 }
@@ -513,7 +513,7 @@ body::-webkit-scrollbar-thumb:hover {
         border-color: var(--color-primary-white) ;
     }
 
-    .header__responsive, .header__logo {
+    .header__responsive, .header__logo, .header__theme {
         display: block;
         position: relative;
         z-index: 10;
@@ -542,7 +542,7 @@ body::-webkit-scrollbar-thumb:hover {
         scroll-behavior: auto;
     }
     
-    .link, .form__data {
+    .header__responsive__rect, .link, .projects__info, .projects__picture--image, .form__data {
         transition: none;
     }
     
