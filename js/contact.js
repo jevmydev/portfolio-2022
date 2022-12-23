@@ -35,7 +35,7 @@ async function handleSubmit(e) {
 
 function openModal(text) {
     $status.textContent = text;
-    $status.classList.add("status--open");
+    $status.classList.add("status__open");
 }
 
 const validForm = (mail, message) => /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(mail) && /[A-Z]/gi.test(message);
