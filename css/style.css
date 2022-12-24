@@ -183,14 +183,14 @@ body::-webkit-scrollbar-thumb:hover {
     justify-content: space-between;
 }
 
-.header__logo, .header__logo--image {
+.header__logo, .header__logo--image, .footer__logo {
     display: block;
     width: auto;
-    height: 2.5rem;
+    max-height: 2.5rem;
     border-radius: var(--border-radius);
 }
 
-.header__links, .home__links, .skills__hard__content, .skills__soft__content, .projects__content, .projects__card, .projects__tags, .timelines, .contact__links {
+.header__links, .home__links, .skills__hard__content, .skills__soft__content, .projects__content, .projects__card, .projects__tags, .timelines, .contact__links, .footer__links {
     list-style: none;
     gap: var(--space-separator-long);
 }
@@ -200,7 +200,6 @@ body::-webkit-scrollbar-thumb:hover {
 .home { 
     padding: var(--space-separator-page) 0;
     position: relative;
-    overflow: hidden;
 }
 
 .home__text, .aboutme__text {
@@ -211,7 +210,7 @@ body::-webkit-scrollbar-thumb:hover {
     max-width: var(--text-max-width);
 }
 
-.home__picture--image, .aboutme__picture--image {
+.home__figure--image, .aboutme__figure--image {
     max-height: 20rem;
     max-width: var(--images-max-width);
     border-radius: var(--border-radius--image);
@@ -247,6 +246,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .home__lines {
     position: absolute;
+    overflow: hidden;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -326,7 +326,7 @@ body::-webkit-scrollbar-thumb:hover {
     display: flex;
 }
 
-.projects__info, .projects__picture--image {
+.projects__info, .projects__figure--image {
     width: 100%;
     transition: transform 0.12s;
 }
@@ -337,7 +337,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-weight: 800;
 }
 
-.projects__picture--image {
+.projects__figure--image {
     border-radius: var(--border-radius--image);
     max-width: var(--images-max-width);
     max-height: 11.5rem;
@@ -448,14 +448,18 @@ body::-webkit-scrollbar-thumb:hover {
 /*--------------------------------Footer--------------------------------*/
 
 .footer {
-    border-top: var(--border-separator);
     padding: var(--space-separator-small) 0;
     background-color: var(--background-secondary-gray);
     font-size: var(--small-size);
 }
 
 .footer__inner {
-    justify-content: center;
+    padding: var(--space-separator-long);
+    justify-content: space-between;
+}
+
+.footer__inner--phrase {
+    border-top: var(--border-separator);
 }
 
 /*--------------------------------Responsive--------------------------------*/
@@ -468,7 +472,7 @@ body::-webkit-scrollbar-thumb:hover {
         --text-max-width: 29rem;
     }
 
-    .aboutme__text, .home__text, .form, .home__picture {
+    .aboutme__text, .home__text, .form {
         margin-top: var(--space-separator-long);
     }
 }
@@ -479,11 +483,11 @@ body::-webkit-scrollbar-thumb:hover {
         --space-separator-page: 8rem;
     }
 
-    .home, .aboutme__content, .contact__content {
+    .home, .aboutme__content, .contact__content, .footer__links {
         flex-direction: column;
     }
 
-    .home__picture, .aboutme__picture  {
+    .home__figure, .aboutme__figure  {
         order: 1;
     }
 
@@ -495,6 +499,10 @@ body::-webkit-scrollbar-thumb:hover {
     .form {
         margin-left: 0;
     }
+
+    .footer__inner--phrase {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -504,12 +512,12 @@ body::-webkit-scrollbar-thumb:hover {
         --subtitle-size: 1.2rem;
     }
 
-    .home__picture--image, .aboutme__picture--image, .projects__picture--image {
+    .home__figure--image, .aboutme__figure--image, .projects__figure--image {
         max-height: none;
     }
 
     .header__links--page {
-        position: absolute;
+        position: fixed;
         justify-content: center;
         top: -100vh;
         right: 0;
@@ -579,7 +587,7 @@ body::-webkit-scrollbar-thumb:hover {
         scroll-behavior: auto;
     }
     
-    .header__responsive__rect, .link, .projects__info, .projects__picture--image, .form__data {
+    .header__responsive__rect, .link, .projects__info, .projects__figure--image, .form__data {
         transition: none;
     }
     
