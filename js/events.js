@@ -8,7 +8,7 @@ const $me = $(".aboutme__figure--image");
 
 const datesEvents = {
     christmas: {
-        dates: [`Sat Dec 24 ${actualYear}`, `Thu Dec 25 ${actualYear}`],
+        dates: [`Sat Dec 24 ${actualYear}`, `Sun Dec 25 ${actualYear}`],
         src: `../images/events/mechristmas.webp`
     }
 }
