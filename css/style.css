@@ -331,7 +331,7 @@ body::-webkit-scrollbar-thumb:hover {
     transition: transform 0.12s;
 }
 
-.projects__info--title {
+.projects__info--title, .timelines__title {
     border-bottom: var(--border-separator);
     background-image: var(--gradient-colorful);
     font-weight: 800;
@@ -364,6 +364,10 @@ body::-webkit-scrollbar-thumb:hover {
     padding: var(--space-separator-long);
     padding-right: 0;
     position: relative;
+}
+
+.timelines__title {
+    border: none;  
 }
 
 .timelines__date {
