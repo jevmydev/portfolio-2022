@@ -1,5 +1,8 @@
 import { $ } from "./assets/selectors.js";
 
+localStorage.removeItem("dark__mode");
+localStorage.removeItem("light__mode");
+
 const typeSchemes = {
     darkMode: {
         title: "Activa el modo claro",
@@ -21,7 +24,7 @@ let scheme = localStorage.getItem("scheme") || systemScheme;
 changeScheme(scheme);
 
 $changeThemeButton.addEventListener("click", () => {
-    scheme = scheme === "darkMode" ? "lightMode": "darkMode";
+    scheme = scheme === "darkMode" || scheme === "dark__mode" ? "lightMode": "darkMode";
     changeScheme(scheme)
 });
 
