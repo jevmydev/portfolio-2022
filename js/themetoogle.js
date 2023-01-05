@@ -1,8 +1,5 @@
 import { $ } from "./assets/selectors.js";
 
-localStorage.removeItem("dark__mode");
-localStorage.removeItem("light__mode");
-
 const typeSchemes = {
     darkMode: {
         title: "Activa el modo claro",
