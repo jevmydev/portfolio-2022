@@ -9,6 +9,7 @@ const actualDayNumber = actualDate.getDay();
 const actualDay = days[actualDayNumber];
 const actualYear = actualDate.getFullYear();
 
+const $subtitleYear = $(".hero__subtitle-year");
 const $me = $(".aboutme__figure--image");
 
 const datesEvents = {
@@ -33,4 +34,12 @@ function getEvent() {
     }
 }
 
+function calculateYearsLearning() {
+    const startLearning = 2021;
+    const yearsLearning = actualYear - startLearning;
+
+    $subtitleYear.textContent = yearsLearning;
+}
+
+calculateYearsLearning();
 getEvent();

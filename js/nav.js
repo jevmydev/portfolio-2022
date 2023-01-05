@@ -2,17 +2,22 @@ import { $, $$ } from "./assets/selectors.js";
 
 const $body = document.body;
 
-const $menuResponsive = $(".header__links--page");
-const $menuRectTop = $(".header__responsive__rect--top");
-const $menuRectBottom = $(".header__responsive__rect--bottom");
+const $buttonOpenMenu = $(".header__responsive-button");
 
-$(".header__responsive__button").addEventListener("click", toggleMenu);
+const $menuResponsive = $(".header__links--page");
+const $menuRectTop = $(".header__responsive-rect--top");
+const $menuRectBottom = $(".header__responsive-rect--bottom");
+
+$buttonOpenMenu.addEventListener("click", toggleMenu);
 $$(".header__link--a").forEach(link => link.addEventListener("click", toggleMenu));
 
 function toggleMenu() {
-    $menuResponsive.classList.toggle("menu__open");
-    $body.classList.toggle("menu__open")
+    $menuResponsive.classList.toggle("menuOpen");
+    $body.classList.toggle("menuOpen");
 
-    $menuRectTop.classList.toggle("header__responsive__rect--topchange");
-    $menuRectBottom.classList.toggle("header__responsive__rect--bottomchange");
+    if($menuResponsive.classList.contains("menuOpen")) $buttonOpenMenu.title = "Cerrar el menú";
+    else $buttonOpenMenu.title = "Abrir el menú";
+
+    $menuRectTop.classList.toggle("header__responsive-rect--topchange");
+    $menuRectBottom.classList.toggle("header__responsive-rect--bottomchange");
 }
