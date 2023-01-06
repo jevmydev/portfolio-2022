@@ -296,6 +296,34 @@ body::-webkit-scrollbar-thumb:hover {
     padding-bottom: var(--space-separator-page);
 }
 
+.aboutme__figure {
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+    font-size: var(--small-size);
+}
+
+.aboutme__figure-status {
+    background-color: var(--background-secondary-gray);
+    border: var(--border-separator);
+    border-radius: var(--border-radius--image);
+    padding: var(--space-separator-small);
+    position: absolute;
+    z-index: 1;
+}
+
+.aboutme__figure-message, .aboutme__figure-text {
+    width: 0;
+    opacity: 0;
+    white-space: nowrap;
+    transition: width 0.12s, opacity 0.12s;
+}
+
+.aboutme__figure-status:hover .aboutme__figure-message, .aboutme__figure-status:hover .aboutme__figure-text {
+    width: 17.5rem;
+    opacity: 1;
+}
+
 .about__previous-small, .aboutme__text-p, .timelines__description, .contact__farewell {
     color: var(--color-secondary-gray);
     max-width: var(--text-max-width);
@@ -450,7 +478,7 @@ body::-webkit-scrollbar-thumb:hover {
     padding: var(--space-separator-long);
     justify-content: center;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: -200vh;
     width: 100%;
 }
