@@ -8,9 +8,6 @@ const $menuResponsive = $(".header__links--page");
 const $menuRectTop = $(".header__responsive-rect--top");
 const $menuRectBottom = $(".header__responsive-rect--bottom");
 
-$buttonOpenMenu.addEventListener("click", toggleMenu);
-$$(".header__link--a").forEach(link => link.addEventListener("click", toggleMenu));
-
 function toggleMenu() {
     $menuResponsive.classList.toggle("menuOpen");
     $body.classList.toggle("menuOpen");
@@ -21,3 +18,6 @@ function toggleMenu() {
     $menuRectTop.classList.toggle("header__responsive-rect--topchange");
     $menuRectBottom.classList.toggle("header__responsive-rect--bottomchange");
 }
+
+$buttonOpenMenu.addEventListener("click", toggleMenu);
+$$(".header__link--a").forEach(link => link.addEventListener("click", toggleMenu));

@@ -4,8 +4,6 @@ const $form = $(".form");
 const $formSubmitter = $(".form__submit");
 const $status = $(".status")
 
-$form.addEventListener("submit", handleSubmit);
-
 async function handleSubmit(e) {
     e.preventDefault();
     $status.classList.remove("statusOpen")
@@ -46,3 +44,5 @@ function openModal(text) {
 }
 
 const validForm = (mail, message) => /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(mail) && /[A-Z]/gi.test(message);
+
+$form.addEventListener("submit", handleSubmit);
