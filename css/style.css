@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Inter";
     src: url("/fonts/Inter.var.latin.woff2") format("woff2");
+    font-display: swap;
 }
 
 :root {
@@ -19,7 +20,7 @@
     --small-letter-spacing: 0.2rem;
     
     --border-radius: 0.3rem;
-    --border-radius--image: 0.5rem;
+    --border-radius--secondary: 0.5rem;
     --border-radius--rounded: 2rem;
 
     --border-separator: 0.14rem solid var(--background-tertiary-gray);
@@ -59,7 +60,7 @@ html[scheme="lightMode"] {
     --background-secondary-gray: #eee;
     --background-tertiary-gray: #0001;
 
-    --color-primary-white: #000;
+    --color-primary-white: #020202;
     --color-secondary-gray: #4f4f4f; 
 }
 
@@ -188,7 +189,7 @@ body::-webkit-scrollbar-thumb:hover {
     display: block;
     width: auto;
     max-height: 2.5rem;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: auto;
     border-radius: var(--border-radius);
 }
 
@@ -215,7 +216,7 @@ body::-webkit-scrollbar-thumb:hover {
 .hero__figure--image, .aboutme__figure--image {
     max-height: 20rem;
     max-width: var(--images-max-width);
-    border-radius: var(--border-radius--image);
+    border-radius: var(--border-radius--secondary);
     aspect-ratio: auto;
     width: 100%;
     height: auto;
@@ -306,7 +307,7 @@ body::-webkit-scrollbar-thumb:hover {
 .aboutme__figure-status {
     background-color: var(--background-secondary-gray);
     border: var(--border-separator);
-    border-radius: var(--border-radius--image);
+    border-radius: var(--border-radius--secondary);
     padding: var(--space-separator-small);
     position: absolute;
     z-index: 1;
@@ -317,6 +318,10 @@ body::-webkit-scrollbar-thumb:hover {
     opacity: 0;
     white-space: nowrap;
     transition: width 0.12s, opacity 0.12s;
+}
+
+.aboutme__figure-text {
+    margin-left: 0.2rem;
 }
 
 .aboutme__figure-status:hover .aboutme__figure-message, .aboutme__figure-status:hover .aboutme__figure-text {
@@ -369,7 +374,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .projects__figure--image {
-    border-radius: var(--border-radius--image);
+    border-radius: var(--border-radius--secondary);
     max-width: var(--images-max-width);
     max-height: 11.5rem;
     aspect-ratio: 16 / 9;
@@ -437,7 +442,24 @@ body::-webkit-scrollbar-thumb:hover {
 
 .contact__form {
     width: 100%;
+    position: relative;
+    padding: var(--space-separator-long);
+    background-color: var(--background-primary-dark);
+    border-radius: var(--border-radius);
     margin-left: var(--space-separator-page);
+}
+
+.contact__form::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    padding: 0.125rem;
+    left: -0.125rem;
+    top: -0.125rem;
+    background-image: var(--gradient-colorful);
+    border-radius: var(--border-radius);
+    width: 100%;
+    height: 100%;
 }
 
 .form__data {
@@ -450,7 +472,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: var(--main-font);
     padding: var(--space-separator-small);
     margin-top: var(--space-separator-x-small);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius--secondary);
     background-color: var(--background-secondary-gray);
     color: var(--color-primary-white);
 }
@@ -462,6 +484,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .form__submit {
     font-size: var(--main-font);
+    border-radius: var(--border-radius--secondary);
     cursor: pointer;
     width: 100%;
 }
@@ -592,8 +615,12 @@ body::-webkit-scrollbar-thumb:hover {
         border-bottom: var(--border-separator);
     }
 
+    .header__link--inner {
+        border-bottom: none;
+    }
+
     .header__link--contact {
-        border-color: var(--color-primary-white) ;
+        border-color: var(--color-primary-white);
     }
 
     .header__responsive, .header__logo, .header__theme {
