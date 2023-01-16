@@ -656,8 +656,9 @@ body::-webkit-scrollbar-thumb:hover {
         scroll-behavior: auto;
     }
     
-    .header__responsive-rect, .link, .projects__info, .projects__figure--image, .form__data {
+    .header__responsive-rect, .link, .projects__info, .projects__figure--image, .form__data, .aboutme__figure-message, .aboutme__figure-text, .hero__greeting {
         transition: none;
+        animation: none;
     }
     
     .hero__lines {
