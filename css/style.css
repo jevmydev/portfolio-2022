@@ -560,6 +560,10 @@ body::-webkit-scrollbar-thumb:hover {
         width: 100%;
         order: 2;
     }
+    
+    .contact__farewell {
+        width: 100%;
+    }
 
     .form {
         margin-left: 0;
