@@ -20,4 +20,4 @@ function toggleMenu() {
 }
 
 $buttonOpenMenu.addEventListener("click", toggleMenu);
-$$(".header__link--a").forEach(link => link.addEventListener("click", toggleMenu));
+$$(".header__link--inner").forEach(link => link.addEventListener("click", toggleMenu));
