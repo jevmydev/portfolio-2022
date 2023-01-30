@@ -2,11 +2,11 @@ import { $ } from "./assets/selectors.js";
 
 const $form = $(".form");
 const $formSubmitter = $(".form__submit");
-const $status = $(".status")
+const $status = $(".status");
 
 async function handleSubmit(e) {
     e.preventDefault();
-    $status.classList.remove("statusOpen")
+    $status.classList.remove("statusOpen");
 
     const data = new FormData($form);
     let allCorrect = false;
@@ -17,7 +17,7 @@ async function handleSubmit(e) {
         headers: {
             "Accept": "application/json"
         }
-    }
+    };
 
     const isValidForm = validForm(data.get("email"), data.get("message"));
 
@@ -32,8 +32,8 @@ async function handleSubmit(e) {
     $formSubmitter.classList.remove("form__submit--disabled");
     $form.reset();
 
-    if(allCorrect) return openModal("Gracias por enviarme un mensaje. ¡Pronto te responderé!")
-    return openModal("Email incorrecto. Vuelve a intentarlo.")
+    if(allCorrect) return openModal("Gracias por enviarme un mensaje. ¡Pronto te responderé!");
+    return openModal("Email incorrecto. Vuelve a intentarlo.");
 }
 
 function openModal(text) {
@@ -43,6 +43,6 @@ function openModal(text) {
     setTimeout(() => $status.classList.remove("statusOpen"), 4000);
 }
 
-const validForm = (mail, message) => /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(mail) && /[A-Z]/gi.test(message);
+const validForm = (mail, message) => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,4})+$/.test(mail) && /[A-Z]/gi.test(message);
 
 $form.addEventListener("submit", handleSubmit);
