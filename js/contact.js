@@ -15,24 +15,24 @@ async function handleSubmit(e) {
         method: "POST",
         body: data,
         headers: {
-            "Accept": "application/json"
+            Accept: "application/json"
         }
     };
 
     const isValidForm = validForm(data.get("email"), data.get("message"));
 
-    if(isValidForm) {
+    if (isValidForm) {
         $formSubmitter.classList.add("form__submit--disabled");
         $formSubmitter.disabled = true;
         const formRequest = await fetch("https://formspree.io/f/meqdjobj", options);
         allCorrect = formRequest.ok;
-    }    
+    }
 
     $formSubmitter.disabled = false;
     $formSubmitter.classList.remove("form__submit--disabled");
     $form.reset();
 
-    if(allCorrect) return openModal("Gracias por enviarme un mensaje. ¡Pronto te responderé!");
+    if (allCorrect) return openModal("Gracias por enviarme un mensaje. ¡Pronto te responderé!");
     return openModal("Email incorrecto. Vuelve a intentarlo.");
 }
 

@@ -1,27 +1,29 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Mi perfil profesional como Frontend Developer & Software Developer.",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint . --fix"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jeremy664K/portfolio.git"
-  },
-  "keywords": [
-    "Jeremy Díaz",
-    "Portfolio",
-    "Frontend Developer",
-    "Software Developer"
-  ],
-  "author": "Jeremy Díaz",
-  "bugs": {
-    "url": "https://github.com/Jeremy664K/portfolio/issues"
-  },
-  "homepage": "https://jeremydiaz.netlify.app/",
-  "devDependencies": {
-    "eslint": "8.33.0"
-  }
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "Mi perfil profesional como Frontend Developer & Software Developer.",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint . --fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Jeremy664K/portfolio.git"
+    },
+    "keywords": [
+        "Jeremy Díaz",
+        "Portfolio",
+        "Frontend Developer",
+        "Software Developer"
+    ],
+    "author": "Jeremy Díaz",
+    "bugs": {
+        "url": "https://github.com/Jeremy664K/portfolio/issues"
+    },
+    "homepage": "https://jeremydiaz.netlify.app/",
+    "devDependencies": {
+        "eslint": "8.33.0",
+        "eslint-config-prettier": "8.6.0",
+        "prettier": "2.8.3"
+    }
 }

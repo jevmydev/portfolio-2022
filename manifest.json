@@ -1,18 +1,18 @@
 {
-  "name": "portfolio",
-  "short_name": "portfolio",
-  "description": "Más de 2 años desarrollando productos destacados por su calidad, tanto como Frontend Developer & Software Developer.",
-  "keywords": ["Jeremy Díaz", "Portfolio", "Frontend Developer", "Web Developer"],
-  "author": "Jeremy Díaz",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jeremy664K/portfolio.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Jeremy664K/portfolio/issues"
-  },
-  "theme_color": "#f2f2f2",
-  "background_color": "#000",
-  "start_url": "/index.html",
-  "homepage": "https://jeremydiaz.netlify.app/"
+    "name": "portfolio",
+    "short_name": "portfolio",
+    "description": "Más de 2 años desarrollando productos destacados por su calidad, tanto como Frontend Developer & Software Developer.",
+    "keywords": ["Jeremy Díaz", "Portfolio", "Frontend Developer", "Web Developer"],
+    "author": "Jeremy Díaz",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Jeremy664K/portfolio.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Jeremy664K/portfolio/issues"
+    },
+    "theme_color": "#f2f2f2",
+    "background_color": "#000",
+    "start_url": "/index.html",
+    "homepage": "https://jeremydiaz.netlify.app/"
 }

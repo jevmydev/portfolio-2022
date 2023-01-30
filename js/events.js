@@ -24,13 +24,13 @@ const datesEvents = {
 };
 
 function getEvent() {
-    for(const eventKey in datesEvents) {
+    for (const eventKey in datesEvents) {
         const event = datesEvents[eventKey];
         const { dates, src } = event;
 
-        const isEventDay = dates.some(date => date === actualDateString);
+        const isEventDay = dates.some((date) => date === actualDateString);
 
-        if(isEventDay) $me.src = src;
+        if (isEventDay) $me.src = src;
     }
 }
 

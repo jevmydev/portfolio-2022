@@ -12,7 +12,7 @@ function toggleMenu() {
     $menuResponsive.classList.toggle("menuOpen");
     $body.classList.toggle("menuOpen");
 
-    if($menuResponsive.classList.contains("menuOpen")) $buttonOpenMenu.title = "Cerrar el menú";
+    if ($menuResponsive.classList.contains("menuOpen")) $buttonOpenMenu.title = "Cerrar el menú";
     else $buttonOpenMenu.title = "Abrir el menú";
 
     $menuRectTop.classList.toggle("header__responsive-rect--topchange");
@@ -20,4 +20,4 @@ function toggleMenu() {
 }
 
 $buttonOpenMenu.addEventListener("click", toggleMenu);
-$$(".header__link--inner").forEach(link => link.addEventListener("click", toggleMenu));
+$$(".header__link--inner").forEach((link) => link.addEventListener("click", toggleMenu));

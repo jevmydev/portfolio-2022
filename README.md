@@ -2,7 +2,7 @@
 
 Mi perfil profesional como **Frontend Developer & Software Developer**.
 
-👉 Enlace: [https://jeremydiaz.netlify.app/#hero](https://jeremydiaz.netlify.app/#hero)  
+👉 Enlace: [https://jeremydiaz.netlify.app/#hero](https://jeremydiaz.netlify.app/#hero)
 
 <p align="left">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="Icono de HTML">
@@ -37,15 +37,15 @@ Mis **proyectos favoritos** que demuestran mi **experiencia** y en el que uso mi
 
 Mi **educación** descrita.
 
-👉 Enlace: [https://jeremydiaz.netlify.app/#chronology](https://jeremydiaz.netlify.app/#chronology)  
+👉 Enlace: [https://jeremydiaz.netlify.app/#chronology](https://jeremydiaz.netlify.app/#chronology)
 
 ![Cronología del portfolio de Jeremy Díaz](./images/readme/chronology.png)
 
 ## Contáctame
 
-Puedes contactar conmigo y llegar a un acuerdo a través del formulario o mis redes sociales. 
+Puedes contactar conmigo y llegar a un acuerdo a través del formulario o mis redes sociales.
 
-👉 Enlace: [https://jeremydiaz.netlify.app/#contact](https://jeremydiaz.netlify.app/#contact)  
+👉 Enlace: [https://jeremydiaz.netlify.app/#contact](https://jeremydiaz.netlify.app/#contact)
 
 [<img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Jeremy Díaz LinkedIn" width="50px" height="40px">](https://www.linkedin.com/in/jeremy-d%C3%ADaz-50b594233/)
 [<img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="Jeremy Díaz Twitter" width="50px" height="40px">](https://twitter.com/jeremy664k)

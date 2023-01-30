@@ -15,7 +15,7 @@ const $html = $("html");
 const $changeThemeButton = $(".header__theme-mode");
 
 const matchingScheme = matchMedia("(prefers-color-scheme: dark)");
-const systemScheme =  matchingScheme.matches ? "darkMode" : "lightMode";
+const systemScheme = matchingScheme.matches ? "darkMode" : "lightMode";
 
 let scheme = localStorage.getItem("scheme") || systemScheme;
 changeScheme(scheme);
@@ -26,9 +26,9 @@ function changeScheme(scheme) {
 
     localStorage.setItem("scheme", scheme);
     $html.setAttribute("scheme", scheme);
-} 
+}
 
 $changeThemeButton.addEventListener("click", () => {
-    scheme = scheme === "darkMode" || scheme === "dark__mode" ? "lightMode": "darkMode";
+    scheme = scheme === "darkMode" || scheme === "dark__mode" ? "lightMode" : "darkMode";
     changeScheme(scheme);
 });
