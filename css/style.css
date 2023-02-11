@@ -496,7 +496,7 @@ body::-webkit-scrollbar-thumb:hover {
     transition: border-color 0.12s;
     width: 100%;
     font-family: var(--main-font);
-    font-size: var(--main-font);
+    font-size: var(--main-size);
     padding: var(--space-separator-small);
     margin-top: var(--space-separator-x-small);
     border-radius: var(--border-radius--secondary);
@@ -511,7 +511,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .form__submit {
-    font-size: var(--main-font);
+    font-size: var(--main-size);
     border-radius: var(--border-radius--secondary);
     cursor: pointer;
     width: 100%;
