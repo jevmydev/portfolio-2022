@@ -4,7 +4,8 @@
     "description": "Mi perfil profesional como Frontend Developer & Software Developer.",
     "main": "index.js",
     "scripts": {
-        "lint": "eslint . --fix"
+        "lint": "eslint . --fix",
+        "format": "prettier . --write"
     },
     "repository": {
         "type": "git",
