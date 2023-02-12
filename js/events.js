@@ -10,27 +10,24 @@ const actualDay = days[actualDayNumber];
 const actualYear = actualDate.getFullYear();
 
 const $subtitleYear = $(".hero__subtitle-year");
-const $me = $(".aboutme__figure--image");
 
 const datesEvents = {
     christmas: {
-        dates: [`${actualDay} Dec 24 ${actualYear}`, `${actualDay} Dec 25 ${actualYear}`],
-        src: "../images/events/mechristmas.webp"
+        dates: [`${actualDay} Dec 24 ${actualYear}`, `${actualDay} Dec 25 ${actualYear}`]
     },
     newYear: {
-        dates: [`${actualDay} Dec 31 ${actualYear}`, `${actualDay} Jan 01 ${actualYear}`],
-        src: "../images/events/meyear.webp"
+        dates: [`${actualDay} Dec 31 ${actualYear}`, `${actualDay} Jan 01 ${actualYear}`]
     }
 };
 
 function getEvent() {
     for (const eventKey in datesEvents) {
         const event = datesEvents[eventKey];
-        const { dates, src } = event;
+        const { dates } = event;
 
         const isEventDay = dates.some((date) => date === actualDateString);
 
-        if (isEventDay) $me.src = src;
+        if (isEventDay) console.log(`¡Hoy es ${eventKey}!`);
     }
 }
 
