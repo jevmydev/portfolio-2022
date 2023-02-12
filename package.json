@@ -9,17 +9,18 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Jeremy664K/portfolio.git"
+        "url": "git+https://github.com/jevmydev/portfolio.git"
     },
     "keywords": [
         "Jeremy Díaz",
+        "jevmydev",
         "Portfolio",
         "Frontend Developer",
         "Software Developer"
     ],
     "author": "Jeremy Díaz",
     "bugs": {
-        "url": "https://github.com/Jeremy664K/portfolio/issues"
+        "url": "https://github.com/jevmydev/portfolio/issues"
     },
     "homepage": "https://jeremydiaz.netlify.app/",
     "devDependencies": {
