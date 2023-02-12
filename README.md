@@ -29,7 +29,7 @@ Descubre **quien soy**, mis **hard skills** y **soft skills** que he ido desarro
 Mis **proyectos favoritos** que demuestran mi **experiencia** y en el que uso mis **habilidades**.
 
 👉 Enlace: [https://jeremydiaz.netlify.app/#projects](https://jeremydiaz.netlify.app/#projects)  
-👉 Más proyectos: [https://github.com/Jeremy664K?tab=repositories](https://github.com/Jeremy664K?tab=repositories)
+👉 Más proyectos: [https://github.com/jevmydev?tab=repositories](https://github.com/jevmydev?tab=repositories)
 
 ![Proyectos del portfolio de Jeremy Díaz](./images/readme/projects.png)
 
