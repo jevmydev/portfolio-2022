@@ -2,14 +2,14 @@
     "name": "portfolio",
     "short_name": "portfolio",
     "description": "Más de 2 años desarrollando productos destacados por su calidad, tanto como Frontend Developer & Software Developer.",
-    "keywords": ["Jeremy Díaz", "Portfolio", "Frontend Developer", "Web Developer"],
+    "keywords": ["Jeremy Díaz", "jevmydev", "Portfolio", "Frontend Developer", "Web Developer"],
     "author": "Jeremy Díaz",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Jeremy664K/portfolio.git"
+        "url": "git+https://github.com/jevmydev/portfolio.git"
     },
     "bugs": {
-        "url": "https://github.com/Jeremy664K/portfolio/issues"
+        "url": "https://github.com/jevmydev/portfolio/issues"
     },
     "theme_color": "#f2f2f2",
     "background_color": "#000",
