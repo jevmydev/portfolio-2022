@@ -47,7 +47,4 @@ Puedes contactar conmigo y llegar a un acuerdo a través del formulario o mis re
 
 👉 Enlace: [https://jeremydiaz.netlify.app/#contact](https://jeremydiaz.netlify.app/#contact)
 
-[<img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Jeremy Díaz LinkedIn" width="50px" height="40px">](https://www.linkedin.com/in/jeremy-d%C3%ADaz-50b594233/)
-[<img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="Jeremy Díaz Twitter" width="50px" height="40px">](https://twitter.com/jeremy664k)
-
 ![Contacto en el portfolio de Jeremy Díaz](./images/readme/contact.png)
