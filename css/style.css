@@ -196,8 +196,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 .header__links,
 .hero__links,
-.skills__hard-content,
-.skills__soft-content,
 .projects__content,
 .projects__card,
 .projects__info-tags,
@@ -357,6 +355,12 @@ body::-webkit-scrollbar-thumb:hover {
 .projects__info-tags {
     flex-wrap: wrap;
     max-width: var(--text-max-width);
+}
+
+.skills__hard-content,
+.skills__soft-content {
+    list-style: none;
+    gap: var(--space-separator-x-small);
 }
 
 .skills__hard-card,
