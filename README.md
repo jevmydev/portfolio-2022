@@ -2,7 +2,7 @@
 
 Mi perfil profesional como **Frontend Developer & Software Developer**.
 
-👉 Enlace: [https://jeremydiaz.netlify.app/#hero](https://jeremydiaz.netlify.app/#hero)
+👉 Enlace: [https://oldjeremydiaz.netlify.app/#hero](https://oldjeremydiaz.netlify.app/#hero)
 
 <p align="left">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="Icono de HTML">
@@ -20,7 +20,7 @@ Mi perfil profesional como **Frontend Developer & Software Developer**.
 
 Descubre **quien soy**, mis **hard skills** y **soft skills** que he ido desarrollando junto el aprendizaje.
 
-👉 Enlace: [https://jeremydiaz.netlify.app/#about](https://jeremydiaz.netlify.app/#about)
+👉 Enlace: [https://oldjeremydiaz.netlify.app/#about](https://oldjeremydiaz.netlify.app/#about)
 
 ![Sobre mí del portfolio de Jeremy Díaz](./images/readme/about.png)
 
@@ -28,7 +28,7 @@ Descubre **quien soy**, mis **hard skills** y **soft skills** que he ido desarro
 
 Mis **proyectos favoritos** que demuestran mi **experiencia** y en el que uso mis **habilidades**.
 
-👉 Enlace: [https://jeremydiaz.netlify.app/#projects](https://jeremydiaz.netlify.app/#projects)  
+👉 Enlace: [https://oldjeremydiaz.netlify.app/#projects](https://oldjeremydiaz.netlify.app/#projects)  
 👉 Más proyectos: [https://github.com/jevmydev?tab=repositories](https://github.com/jevmydev?tab=repositories)
 
 ![Proyectos del portfolio de Jeremy Díaz](./images/readme/projects.png)
@@ -37,7 +37,7 @@ Mis **proyectos favoritos** que demuestran mi **experiencia** y en el que uso mi
 
 Mi **educación** descrita.
 
-👉 Enlace: [https://jeremydiaz.netlify.app/#chronology](https://jeremydiaz.netlify.app/#chronology)
+👉 Enlace: [https://oldjeremydiaz.netlify.app/#chronology](https://oldjeremydiaz.netlify.app/#chronology)
 
 ![Cronología del portfolio de Jeremy Díaz](./images/readme/chronology.png)
 
@@ -45,6 +45,6 @@ Mi **educación** descrita.
 
 Puedes contactar conmigo y llegar a un acuerdo a través del formulario o mis redes sociales.
 
-👉 Enlace: [https://jeremydiaz.netlify.app/#contact](https://jeremydiaz.netlify.app/#contact)
+👉 Enlace: [https://oldjeremydiaz.netlify.app/#contact](https://oldjeremydiaz.netlify.app/#contact)
 
 ![Contacto en el portfolio de Jeremy Díaz](./images/readme/contact.png)
